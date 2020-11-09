@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:paddingTop="34dp"
+    android:paddingBottom="15dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewBiografiaUtente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/white"
+        android:lineSpacingMultiplier="1.3"
+        android:textAppearance="@style/TextLongFont" />
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewImpostazioni"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="30dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qualcosa non ti è chiaro?\nNessun problema: ripassiamo passo passo come funziona Beautiful Vino.\n"
+            android:textAppearance="@style/infoTextSottotitolo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EVENTI"
+            android:textAppearance="@style/infoTextTitolo" />
+
+        <TextView
+            android:id="@+id/textViewInfo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nella sezione eventi, trovi la lista degli eventi in programma. Cliccando su TUTTI, potrai scegliere dal menu la tua provincia e controllare solo gli eventi vicini a te.\n"
+            android:textAppearance="@style/infoTextTesto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nPuoi acquistare o prenotare un evento, a seconda delle preferenze dell’organizzatore."
+            android:textAppearance="@style/infoTextSottotitolo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se scegli di acquistare, dovrai pagare subito, altrimenti, prenoterai e pagherai in loco.\nÈ importante, oltre che rispettoso, avvertire sempre nel caso in cui tu non si possa partecipare a un evento prenotato.\nPuoi farlo rispondendo alla mail che riceverai con la conferma della prenotazione.\n"
+            android:textAppearance="@style/infoTextTesto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ogni evento ti regala dei punti esperienza che ti faranno salire di livello, trasformandoti da bevitore di acqua a esperto degustatore.\n"
+            android:textAppearance="@style/infoTextSottotitolo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SCOPRI"
+            android:textAppearance="@style/infoTextTitolo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La sezione Scopri è la nostra scuola per wine lovers."
+            android:textAppearance="@style/infoTextSottotitolo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qui i vignaioli condividono la loro conoscenza e il loro pensiero con tutti gli iscritti alla piattaforma, in una forma breve, di rapida lettura e accessibile a tutti.\nGiorno dopo giorno, settimana dopo settimana, questi contenuti si stratificheranno delineando una mappa, una visione d’insieme sempre più esaustiva su cosa è il vino.\nIl tutto da un punto di vista diverso dal solito: quello di chi il vino lo fa, o che con il vino in un modo o nell’altro ci lavora.\n"
+            android:textAppearance="@style/infoTextTesto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROFILO"
+            android:textAppearance="@style/infoTextTitolo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nel Profilo tieni traccia dei tuoi progressi."
+            android:textAppearance="@style/infoTextSottotitolo" />
+
+        <TextView
+            android:id="@+id/textViewInfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Controlli gli eventi prenotati o acquistati, consulti la tua lista dei vini, collezioni badge esperienziali e controlli quelli che puoi guadagnare ai prossimi eventi.\nVediamo nel dettaglio questi punti.\n"
+            android:textAppearance="@style/infoTextTesto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LISTA DEI VINI"
+            android:textAppearance="@style/infoTextTitolo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La lista dei vini contiene i vini che hai incontrato nel tuo percorso."
+            android:textAppearance="@style/infoTextSottotitolo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quelli che erano presenti a un evento al quale hai partecipato, o quelli che hai aggiunto manualmente cliccando su “Aggiungi” nella scheda di un vino.\n\nColtivando questa lista avrai sempre il dettaglio dei vini che hai conosciuto, potrai andarti a rileggere la loro descrizione, fare comparazioni, consigliare un vino a un amico e saprai cosa ordinare al ristorante :)\n"
+            android:textAppearance="@style/infoTextTesto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BADGE"
+            android:textAppearance="@style/infoTextTitolo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I badge sono medaglie esperienziali."
+            android:textAppearance="@style/infoTextSottotitolo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ogni evento te ne offre uno, e siccome ogni evento è unico anche ogni badge è unico. Quindi se lo perdi non avrai altre occasioni per trovarlo nuovamente.\nOgni badge ottenuto ti dice in sintesi che cosa hai imparato, o quale tipo di particolare esperienza enoica ti sei portato a casa. Collezionarli equivale a costruire una mappa del tuo percorso, aggiungendo sempre nuovi tasselli alla conoscenza di questo mondo complesso e affascinante.\n\n"
+            android:textAppearance="@style/infoTextTesto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hai ancora qualche domanda o vuoi segnalarci come migliorare l’app di Beautiful Vino?"
+            android:textAppearance="@style/infoTextSottotitolo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="email"
+            android:text="Scrivici a info@beautifulvino.com!"
+            android:textAppearance="@style/infoTextTesto" />
+
+    </LinearLayout>
+</ScrollView>

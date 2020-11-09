@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutFirst"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="34dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:background="@drawable/white_circle"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewUtente"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:outlineProvider="background"
+                android:background="@drawable/white_circle"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textViewNomeUtente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/larsseit_bold"
+            android:textColor="@android:color/white"
+            android:text="NomeUtente"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewLivelloUtente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/larsseit_medium"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textViewProssimoLivelloUtente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/larsseit_medium"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonImpostazioniUtente"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_impostazioni"
+        android:scaleType="centerInside"/>
+
+    <Button
+        android:id="@+id/buttonSeguiUtente"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/button_segui"
+        android:textColor="@color/colorRedPink"
+        android:textSize="9sp"
+        android:fontFamily="@font/inter_ui_bold"
+        android:background="@drawable/border_white"/>
+
+</RelativeLayout>

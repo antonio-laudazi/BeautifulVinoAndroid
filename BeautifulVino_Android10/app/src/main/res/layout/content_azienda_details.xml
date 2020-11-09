@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.marte5.beautifulvino.Utility.ExtendedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewAzienda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewAzienda"
+            android:layout_width="match_parent"
+            android:layout_height="236dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:foreground="@drawable/foreground_image_layer"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNomeAzienda"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="194dp"
+            android:background="@drawable/layer_shadow_corner"
+            android:elevation="20dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp">
+
+            <TextView
+                android:id="@+id/textViewTitoloAzienda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/larsseit_bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/colorPurplishBrown"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewLuogoAzienda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_ui_regular"
+                android:maxLines="1"
+                android:textColor="@color/colorRedPink"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTestoAzienda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutNomeAzienda"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.3"
+            android:autoLink="web"
+            android:textColorLink="@color/colorPurpleBrown"
+            android:textAppearance="@style/TextLongLongFont" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDoveAzienda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTestoAzienda"
+            android:layout_marginVertical="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="46dp"
+                android:text="@string/text_view_dove"
+                android:textAppearance="@style/DoveFont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="125dp"
+                    android:background="@drawable/layer_shadow_corner"
+                    android:elevation="20dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp">
+
+                    <TextView
+                        android:id="@+id/textViewDoveCittaAzienda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textAppearance="@style/CittaTelefonoCardFont" />
+
+                    <TextView
+                        android:id="@+id/textViewDoveIndirizzoAzienda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textAppearance="@style/IndEmailCardFont" />
+
+                    <TextView
+                        android:id="@+id/textViewDoveTelefonoAzienda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:autoLink="phone"
+                        android:textColorLink="@color/colorPurpleBrown"
+                        android:textAppearance="@style/CittaTelefonoCardFont" />
+
+                    <TextView
+                        android:id="@+id/textViewDoveEmailAzienda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:autoLink="email"
+                        android:textColorLink="@color/colorPurpleBrown"
+                        android:textAppearance="@style/IndEmailCardFont" />
+
+                    <TextView
+                        android:id="@+id/textViewDoveSitoAzienda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:autoLink="web"
+                        android:textColorLink="@color/colorPurpleBrown"
+                        android:textAppearance="@style/IndEmailCardFont" />
+                </LinearLayout>
+
+                <fragment xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mapAzienda"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    tools:context="com.marte5.beautifulvino.AziendaDetailsActivity" />
+
+                <ImageButton
+                    android:id="@+id/buttonMapAzienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    android:background="@android:color/transparent"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/listViniAzienda"
+            android:name="com.marte5.beautifulvino.AziendaDetailsActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linearLayoutDoveAzienda"
+            android:clipToPadding="false"
+            android:paddingBottom="15dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:context="com.marte5.beautifulvino.AziendaDetailsActivity"
+            tools:listitem="@layout/vino_list_item" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEventiAzienda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listViniAzienda"
+            android:layout_marginTop="42dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewProssimiEvAzienda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:text="@string/text_view_prossimi_eventi"
+                android:textAppearance="@style/DoveFont" />
+
+            <android.support.v7.widget.RecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/listProssimiEventi"
+                android:name="com.marte5.beautifulvino.AziendaDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:clipToPadding="false"
+                android:paddingBottom="15dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:context="com.marte5.beautifulvino.AziendaDetailsActivity"
+                tools:listitem="@layout/fragment_evento" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.marte5.beautifulvino.Utility.ExtendedScrollView>

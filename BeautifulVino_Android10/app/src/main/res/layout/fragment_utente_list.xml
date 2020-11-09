@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayoutCerchi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewYellowUtente"
+            android:layout_width="600dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginTop="-250dp"
+            android:background="@drawable/yellow_circle" />
+
+        <ImageView
+            android:id="@+id/imageViewRosaUtente"
+            android:layout_width="600dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginTop="-350dp"
+            android:background="@drawable/red_pink_circle" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutListVuota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coordinatorLayoutCerchi"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewListVuota1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coordinatorLayoutCerchi"
+            android:textAppearance="@style/UiTxtBoldFont" />
+
+        <TextView
+            android:id="@+id/textViewListVuota2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextLongFont"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerUtente"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutIndicatorsUt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayoutTab"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/utente_indicator_0"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/feed_ico" />
+
+        <ImageView
+            android:id="@+id/utente_indicator_1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/feed_ico" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewPagerUtente"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/layer_white_corner_button"
+            android:minHeight="?attr/actionBarSize"
+            app:tabSelectedTextColor="@color/colorPurpleBrown"
+            app:tabTextAppearance="@style/tabBarTitleText"
+            app:tabTextColor="@color/colorPurpleBrown40" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.marte5.beautifulvino.AziendaDetailsActivity">
+
+    <include layout="@layout/title_view" />
+
+    <include layout="@layout/content_azienda_details" />
+    <include layout="@layout/layout_progress_bar" />
+
+
+</android.support.constraint.ConstraintLayout>

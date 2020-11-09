@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.marte5.beautifulvino.Utility.ExtendedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewPost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/imageViewPost"
+            android:layout_width="match_parent"
+            android:layout_height="236dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/placeholder"
+            android:foreground="@drawable/foreground_image_layer"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNomePost"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="194dp"
+            android:background="@drawable/layer_shadow_corner"
+            android:elevation="20dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp">
+
+            <TextView
+                android:id="@+id/textViewTitoloPost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="12dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/larsseit_bold"
+                android:gravity="left|center"
+                android:maxLines="3"
+                android:textColor="@color/colorPurplishBrown"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webViewVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutNomePost"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorDandelion"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/buttonfullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/webViewVideo"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/inter_ui_bold"
+            android:text="VEDI A SCHERMO INTERO"
+            android:textColor="@color/colorRedPink"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textViewTestoPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonfullscreen"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="16dp"
+            android:autoLink="web"
+            android:lineSpacingMultiplier="1.3"
+            android:textAppearance="@style/TextLongLongFont"
+            android:textColorLink="@color/colorPurpleBrown" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="11dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/textViewTestoPost">
+
+            <include
+                layout="@layout/header_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="26dp"></include>
+
+            <Button
+                android:id="@+id/buttonConfermaPost"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_acquista_height"
+                android:layout_marginBottom="@dimen/button_acquista_margin_bottom"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layer_yellow_corner_button"
+                android:fontFamily="@font/larsseit_bold"
+                android:text="Conferma Lettura"
+                android:textAppearance="@style/ButtonAcquistaFont" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.marte5.beautifulvino.Utility.ExtendedScrollView>

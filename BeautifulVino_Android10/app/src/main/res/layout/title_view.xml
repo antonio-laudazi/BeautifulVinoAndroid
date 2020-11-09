@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_view_height"
+    android:elevation="15dp"
+    android:background="@android:color/white"
+    android:id="@+id/frameLayoutTitleView"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/textViewTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/larsseit_bold"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/colorPurplishBrown"
+        android:textSize="16sp"
+        android:maxLines="2"/>
+
+</FrameLayout>

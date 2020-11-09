@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/colorPurpleBrown">
+
+    <ProgressBar
+        android:id="@+id/regopt_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/regopt_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/email_regopt_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_login_bottom_margin"
+            android:paddingLeft="@dimen/activity_login_horizontal_margin"
+            android:paddingRight="@dimen/activity_login_horizontal_margin"
+            android:paddingTop="@dimen/activity_login_top_margin">
+
+            <TextView
+                android:id="@+id/textViewTitleRegistrati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Registrati"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="@style/TitleLoginFont" />
+
+            <TextView
+                android:id="@+id/textViewSottotitleRegistrati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Completa il tuo profilo per una migliore esperienza!"
+                android:textAppearance="@style/TitleLoginFont"
+                android:layout_marginBottom="20dp"
+                android:textSize="11sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewRegOpt"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:outlineProvider="background"
+                    android:background="@drawable/white_circle"/>
+                <ImageButton
+                    android:id="@+id/buttonFotoRegOpt"
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:layout_alignStart="@id/imageViewRegOpt"
+                    android:layout_alignTop="@id/imageViewRegOpt"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/grey_circle"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"
+                    android:src="@drawable/button_foto"  />
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:theme="@style/editTextWhite">
+
+                <EditText
+                    android:id="@+id/cittaRegOpt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="città"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="@style/editTextFontWhite" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/editTextWhite">
+
+                <EditText
+                    android:id="@+id/biografiaRegOpt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="biografia"
+                    android:textAppearance="@style/editTextFontWhite"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonPrivacyOpt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/inter_ui_regular"
+                android:text="cliccando su "
+                android:textAppearance="@style/ButtonAccediFont"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:layout_marginTop="56dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/buttonAvantiRegOpt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_accedi_bg"
+                    android:text="@string/button_avanti"
+                    android:textAppearance="@style/ButtonAccediFont"
+                    android:textColor="@drawable/button_accedi_text"/>
+
+                <ImageView
+                    android:id="@+id/image_freccia_reg_opt"
+                    android:elevation="20dp"
+                    android:layout_width="14dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="83dp"
+                    android:background="@drawable/freccia_yellow" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonPiuTardiRegOpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/inter_ui_bold"
+                android:text="Più tardi"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

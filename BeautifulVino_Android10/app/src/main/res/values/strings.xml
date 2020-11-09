@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Beautiful Vino</string>
+    <string name="title_eventi">eventi</string>
+    <string name="title_feed">scopri</string>
+    <string name="title_profilo">profilo</string>
+    <string name="title_activity_evento_details">EventoDetailsActivity</string>
+    <string name="title_activity_province">ProvinceActivity</string>
+    <string name="title_activity_list_view_vini">ListViewViniActivity</string>
+    <string name="title_activity_vino">VinoActivity</string>
+    <string name="title_activity_login">Accedi</string>
+    <string name="button_mostra_vini">MOSTRA TUTTI I VINI</string>
+    <string name="button_aggiungi">AGGIUNGI</string>
+    <string name="button_segui">SEGUI</string>
+    <string name="text_view_dove">DOVE</string>
+    <string name="text_view_partecipanti">Partecipanti</string>
+    <string name="text_view_max">Max</string>
+    <string name="text_view_disponibili">Disponibili ancora</string>
+    <string name="text_view_iscritti">Già iscritti</string>
+    <string name="text_view_uvaggio">Uvaggio:</string>
+    <string name="text_view_regione">Regione:</string>
+    <string name="text_view_profumo">Profumo:</string>
+    <string name="text_view_ti_regala">Questo evento ti regala il badge:</string>
+    <string name="text_view_info_azienda">INFO AZIENDA</string>
+    <string name="text_view_prossimi_eventi">PROSSIMI EVENTI</string>
+    <string name="text_view_nella_carta">Nella carta dei Vini di:</string>
+    <string name="text_view_lista_vini">Lista dei Vini</string>
+    <string name="text_view_vino_bello">Il vino non è mai stato\ncosì bello</string>
+    <string name="button_registrati">REGISTRATI</string>
+    <string name="button_accedi">ACCEDI</string>
+    <string name="button_avanti">AVANTI</string>
+    <string name="button_accedi_fb">ACCEDI CON FACEBOOK</string>
+    <string name="button_accedi_gl">ACCEDI CON GOOGLE</string>
+    <string name="title_activity_boarding">Boarding title</string>
+    <string name="section_format">section_format</string>
+    <string name="guadagna_badge">Guadagna altri Badge</string>
+
+    <string name="button_registrati_fb">REGISTRATI CON FACEBOOK</string>
+    <string name="button_registrati_gl">REGISTRATI CON GOOGLE</string>
+
+    <string name="text_view_gia_registrato">Già registrato? Effettua il</string>
+
+    <string name="text_view_vini_profilo_vuota_titolo">La tua carta dei vini è vuota… sei astemio per caso?\n</string>
+    <string name="text_view_vini_profilo_vuota_testo">Inizia a degustare partecipando ai nostri eventi e tieni traccia dei vini: finalmente saprai cosa ordinare al ristorante!</string>
+    <string name="text_view_eventi_profilo_vuota_titolo">Non hai ancora partecipato a nessun evento e non hai eventi in programma.\n</string>
+    <string name="text_view_eventi_profilo_vuota_testo">Che ne dici di dare un’occhiata ai prossimi eventi?</string>
+    <string name="text_view_badge_profilo_vuota_titolo">Non hai ancora guadagnato nessun badge.\n</string>
+    <string name="text_view_badge_profilo_vuota_testo">Partecipa agli eventi e colleziona esperienze.\nSalirai di livello e diventerai un degustatore sempre migliore!</string>
+
+    <string name="text_view_eventi_vuota1">Pare che non ci siano eventi in programma nella tua zona, ma ce ne saranno presto.\n</string>
+    <string name="text_view_eventi_vuota2">È normale, per adesso puntiamo sulla qualità e non sulla quantità.\n</string>
+    <string name="text_view_eventi_vuota3">Nel frattempo puoi dare un’occhiata alla sezione <b>Scopri</b> e imparare un sacco di cose direttamente dagli
+        addetti ai lavori!</string>
+    <string name="text_view_boarding1">Entra nel nostro club di\ndegustazione e partecipa solo a\neventi particolari</string>
+    <string name="text_view_boarding2">Leggi le storie dei vignaioli, accedi a contenuti formativi scritti dai produttori ed esplora le mille sfaccettature del vino</string>
+    <string name="text_view_boarding3">Fai crescere la tua carta dei vini, guadagna esperienza e colleziona badge esperienziali</string>
+<string name="text_view_info">Qualcosa non ti è chiaro?
+Nessun problema: ripassiamo passo passo come funziona Beautiful Vino.
+</string>
+    <!-- Strings related to login  -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_biografia">Biografia</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_nome">Nome</string>
+    <string name="prompt_citta">Città</string>
+    <string name="prompt_professione">Professione</string>
+
+    <string name="prompt_email_login">email</string>
+    <string name="prompt_password_login">password</string>
+    <string name="button_dimenticat_psw">Dimenticato la password?</string>
+
+
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">L\'email non è valida</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">La password inserita non è corretta</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing emailc
+        completions."
+    </string>
+    <string name="title_activity_post_details">PostDetailsActivity</string>
+    <string name="title_activity_impostazioni">ImpostazioniActivity</string>
+    <string name="title_activity_utente_details">UtenteDetailsActivity</string>
+    <string name="title_activity_registrazione">RegistrazioneActivity</string>
+    <string name="title_activity_registrazione_opt">RegistrazioneOptActivity</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="prompt_nome_registrazione">nome</string>
+
+    <string name="facebook_app_id">435127290214918</string>
+    <!--<string name="server_client_id">782477517077-ui2r5tv92psk3tda0n6840avmp15rdc2.apps.googleusercontent.com</string> release Google sign in-->
+    <string name="server_client_id">782477517077-f5taehvkm0oagtgp0i6k6q6tovff37mm.apps.googleusercontent.com</string><!--OAuth client ID -> Web Application Google sign in-->
+
+    <!--<string name="server_client_id">782477517077-acjan25tj2fo3ipp7elafpf2pqdcr95t.apps.googleusercontent.com</string> DEBUG Google sign in-->
+    <string name="title_activity_info">InfoActivity</string> <!-- Google login  -->
+</resources>

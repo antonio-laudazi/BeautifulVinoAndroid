@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/titleBoarding1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scopri"
+        android:textAppearance="@style/BoardingTitoloFont"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/descrBoarding1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_view_boarding1"
+        android:textAlignment="center"
+        android:lineSpacingMultiplier="1.3"
+        android:textAppearance="@style/TextLongFont" />
+
+    <ImageView
+        android:id="@+id/imageBoarding11"
+        android:layout_width="325dp"
+        android:layout_height="260dp"
+        android:src="@drawable/boarding_scopri1"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageBoarding12"
+        android:layout_width="323dp"
+        android:layout_height="241dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/boarding_scopri2"/>
+
+</LinearLayout>

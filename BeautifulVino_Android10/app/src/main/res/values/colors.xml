@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRedPink">#f12c72</color>
+    <color name="colorRedPink90">#E6f12c72</color>
+    <color name="colorDandelion">#fcdb09</color>
+    <color name="colorDandelion10">#1afcdb09</color>
+    <color name="colorPurpleBrown">#462b35</color>
+    <color name="colorPurpleBrown60">#99462b35</color>
+    <color name="colorPurpleBrown40">#66462b35</color>
+    <color name="colorWarmGrey">#797171</color>
+    <color name="colorWarmGreyLong">#6a6464</color>
+    <color name="colorWarmWarmGrey">#9b9191</color>
+    <color name="colorPrezzo">#372424</color>
+    <color name="colorWarmGrey60">#99554e4e</color>
+    <color name="colorWarmGrey20">#33979797</color>
+    <color name="colorGreyishBrown">#554e4e</color>
+    <color name="colorPurplishBrown">#3a3033</color>
+    <color name="colorWhite60">#99FFFFFF</color>
+    <color name="colorWhite50">#80FFFFFF</color>
+    <color name="colorWhite70">#b3FFFFFF</color>
+    <color name="colorWhite40">#66FFFFFF</color>
+    <color name="colorBluish">#2c78d0</color>
+    <color name="colorOrangishRed">#ea3806</color>
+    <color name="colorGreyCornice">#dbdbdb</color>
+    <color name="colorBoardingBackground">#fafafa</color>
+
+</resources>

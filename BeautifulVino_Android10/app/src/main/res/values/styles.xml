@@ -1,0 +1,234 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWarmGrey</item>
+        <item name="colorPrimaryDark">@color/colorWarmWarmGrey</item>
+        <item name="colorAccent">@color/colorRedPink</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TitleFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/larsseit_bold</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="TitleLoginFont" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/larsseit_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="DataCardEventoFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorWarmWarmGrey</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SottoTitoloFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorRedPink</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PrezzoFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPrezzo</item>
+        <item name="android:fontFamily">@font/inter_ui_bold</item>
+        <item name="android:textSize">12.5sp</item>
+    </style>
+
+    <style name="CittaFont" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/inter_ui_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DoveFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorRedPink</item>
+        <item name="android:fontFamily">@font/larsseit_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MessVuotoFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorRedPink</item>
+        <item name="android:fontFamily">@font/larsseit</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorWarmGrey</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextLongFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorWarmGrey</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="TextLongLongFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorWarmGreyLong</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+
+    <style name="TextTemaFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorWarmGrey</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="NomeUtenteSchedaFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/larsseit_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DatiUtenteSchedaFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorRedPink</item>
+        <item name="android:fontFamily">@font/larsseit_medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TitoloCommentoSchedaFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/larsseit_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="UiTxtBoldFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/larsseit_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+
+    <style name="CittaTelefonoCardFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/inter_ui_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="IndEmailCardFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ButtonAcquistaFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/larsseit</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ButtonAccediFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/larsseit_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BadgeTitoloFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurplishBrown</item>
+        <item name="android:fontFamily">@font/larsseit_bold</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="BadgeTestoFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorWarmGrey</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="BoardingTitoloFont" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorRedPink</item>
+        <item name="android:fontFamily">@font/sailec_bold</item>
+        <item name="android:textSize">42sp</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="editTextWhite" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorWhite60</item>
+        <item name="colorControlActivated">@color/colorWhite60</item>
+        <item name="colorControlHighlight">@color/colorWhite60</item>
+        <item name="colorAccent">@color/colorWhite60</item>
+        <item name="android:textColorHint">@color/colorWhite60</item>
+    </style>
+
+    <style name="editTextFontWhite" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/inter_ui_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="editTextPurpleBrown" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPurpleBrown60</item>
+        <item name="colorControlActivated">@color/colorPurpleBrown60</item>
+        <item name="colorControlHighlight">@color/colorPurpleBrown60</item>
+        <item name="colorAccent">@color/colorPurpleBrown60</item>
+        <item name="android:textColorHint">@color/colorPurpleBrown60</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+    </style>
+
+    <style name="editTextFontPurpleBrown" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/inter_ui_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="tabBarTitleText" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="infoTextTitolo" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorRedPink</item>
+        <item name="android:fontFamily">@font/larsseit_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="infoTextSottotitolo" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorPurpleBrown</item>
+        <item name="android:fontFamily">@font/larsseit_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="infoTextTesto" parent="android:TextAppearance">
+        <item name="android:textColor">@color/colorWarmGrey</item>
+        <item name="android:fontFamily">@font/inter_ui_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+    <!-- <style name="ButtonAccediFontEnDisabled" parent="android:TextAppearance">
+         <item name="state_enabled">false">
+             <item name="android:textColor">@color/colorRedPink</item>
+         </item>
+         <item name="android:textColor">@color/colorPurpleBrown</item>
+         <item name="android:fontFamily">@font/larsseit_bold</item>
+         <item name="android:textSize">14sp</item>
+     </style>-->
+
+
+</resources>

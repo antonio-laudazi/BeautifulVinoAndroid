@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.marte5.beautifulvino.Utility.ExtendedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewEvento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/space_for_button">
+
+        <ImageView
+            android:id="@+id/imageViewEvento"
+            android:layout_width="match_parent"
+            android:layout_height="236dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/placeholder"
+            android:foreground="@drawable/foreground_image_layer"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCitta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="140dp">
+
+            <ImageView
+                android:id="@+id/imageViewPin"
+                android:layout_width="10dp"
+                android:layout_height="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/pin_small"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/textViewCitta"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/buttonPrefEvento"
+                android:layout_toEndOf="@+id/imageViewPin"
+                android:textAppearance="@style/CittaFont" />
+
+            <ImageButton
+                android:id="@+id/buttonPrefEvento"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutTitoloEvento"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_below="@id/relativeLayoutCitta"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/layer_shadow_corner"
+            android:elevation="20dp"
+            android:paddingHorizontal="25dp">
+
+            <TextView
+                android:id="@+id/textViewTitolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textAppearance="@style/TitleFont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitolo"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/SottoTitoloFont" />
+
+                <TextView
+                    android:id="@+id/textViewPrezzo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/layer_yellow_corner_text_view"
+                    android:paddingHorizontal="5dp"
+                    android:textAppearance="@style/PrezzoFont" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayoutTitoloEvento"
+            android:layout_marginHorizontal="25dp"
+            android:textAppearance="@style/TextTemaFont"
+            android:textColor="@color/colorPurpleBrown" />
+
+        <TextView
+            android:id="@+id/textViewTesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTema"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="16dp"
+            android:autoLink="web"
+            android:lineSpacingMultiplier="1.3"
+            android:textAppearance="@style/TextLongLongFont"
+            android:textColorLink="@color/colorPurpleBrown" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTesto"
+            android:layout_marginTop="41dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:text="LOCATION"
+                android:textAppearance="@style/DoveFont" />
+
+            <android.support.v7.widget.RecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/listAziendaEvento"
+                android:name="com.marte5.beautifulvino.EventoDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTesto"
+                android:clipToPadding="false"
+                android:paddingBottom="10dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:context="com.marte5.beautifulvino.EventoDetailsActivity"
+                tools:listitem="@layout/feed_azienda_list_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutVini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutLocation"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:text="I VINI"
+                android:textAppearance="@style/DoveFont" />
+
+            <android.support.v7.widget.RecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/listVino"
+                android:name="com.marte5.beautifulvino.EventoDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="20dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:context="com.marte5.beautifulvino.EventoDetailsActivity"
+                tools:listitem="@layout/vino_list_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutVini"
+            android:layout_marginVertical="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/text_view_dove"
+                android:textAppearance="@style/DoveFont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/layer_shadow_corner"
+                    android:elevation="20dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp">
+
+                    <TextView
+                        android:id="@+id/textViewDoveCittaEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textAppearance="@style/CittaTelefonoCardFont" />
+
+                    <TextView
+                        android:id="@+id/textViewDoveIndirizzoEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textAppearance="@style/IndEmailCardFont" />
+
+                    <TextView
+                        android:id="@+id/textViewDoveTelefonoEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:autoLink="phone"
+                        android:textAppearance="@style/CittaTelefonoCardFont"
+                        android:textColorLink="@color/colorPurpleBrown" />
+
+                    <TextView
+                        android:id="@+id/textViewDoveEmailEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:autoLink="email"
+                        android:textAppearance="@style/IndEmailCardFont"
+                        android:textColorLink="@color/colorPurpleBrown" />
+                </LinearLayout>
+
+                <fragment xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mapEvento"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    tools:context="com.marte5.beautifulvino.EventoDetailsActivity" />
+
+                <ImageButton
+                    android:id="@+id/buttonMapEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPartecipanti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutDove"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="41dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/text_view_partecipanti"
+                android:textAppearance="@style/UiTxtBoldFont" />
+
+            <TextView
+                android:id="@+id/textViewMaxEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/larsseit_bold"
+                android:text="@string/text_view_max"
+                android:textColor="@color/colorWarmGrey"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewDisponibiliEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:fontFamily="@font/inter_ui_bold"
+                android:text="@string/text_view_disponibili"
+                android:textColor="@color/colorRedPink"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#e7e7e7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutIscritti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutPartecipanti"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewGiaIscritti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:text="@string/text_view_iscritti"
+                android:textAppearance="@style/UiTxtBoldFont" />
+
+            <android.support.v7.widget.RecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/listIscrittiEvento"
+                android:name="com.marte5.beautifulvino.EventoDetailsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="27dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:context="com.marte5.beautifulvino.EventoDetailsActivity"
+                tools:listitem="@layout/header_view" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBadge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutIscritti"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTiRegala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:text="@string/text_view_ti_regala"
+                android:textAppearance="@style/TextFont" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTitoloBadge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorDandelion10"
+                android:orientation="horizontal"
+                android:paddingVertical="34dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBadgeEvento"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="26dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textViewTitoloBadge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/larsseit_bold"
+                    android:maxLines="2"
+                    android:textColor="@color/colorPurplishBrown"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</com.marte5.beautifulvino.Utility.ExtendedScrollView>

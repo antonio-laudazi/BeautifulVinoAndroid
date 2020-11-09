@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/altezza_header_view"
+    android:background="@android:color/white"
+    android:id="@+id/relativeLayoutHeader"
+    android:layout_marginVertical="8dp">
+<ImageView
+    android:layout_width="44dp"
+    android:layout_height="44dp"
+    android:scaleType="centerCrop"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/grey_circle"
+    android:outlineProvider="background"
+    android:id="@+id/imageViewHeader"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageViewHeader"
+        android:orientation="vertical"
+        android:layout_marginLeft="13dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/NomeUtenteSchedaFont" />
+
+        <TextView
+            android:id="@+id/textViewSottoHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/DatiUtenteSchedaFont" />
+    </LinearLayout>
+
+</RelativeLayout>

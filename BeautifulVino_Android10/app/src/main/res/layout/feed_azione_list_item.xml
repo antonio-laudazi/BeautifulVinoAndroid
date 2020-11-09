@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutAzioneFeed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/layer_shadow_corner"
+    android:elevation="20dp"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="11dp"></include>
+
+    <TextView
+        android:id="@+id/textViewTitoloAzione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="7dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textAppearance="@style/TitoloCommentoSchedaFont" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutAzione"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/layer_corner_small"
+        android:outlineProvider="background">
+
+        <LinearLayout
+            android:id="@+id/relativeLayoutYellowAzione"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingLeft="89dp"
+            android:paddingRight="10dp"
+            android:background="@color/colorDandelion"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNomeAzione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:maxLines="1"
+                android:textSize="18dp"
+                android:fontFamily="@font/inter_ui_bold"
+                android:textColor="@color/colorPurpleBrown"/>
+
+            <TextView
+                android:id="@+id/textViewSottoNomeAzione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_ui_regular"
+                android:textColor="@color/colorPurpleBrown"/>
+
+            <TextView
+                android:id="@+id/textViewTestoAzione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_ui_regular"
+                android:alpha="0.6"
+                android:textColor="#323232"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewAzione"
+            android:layout_width="86dp"
+            android:layout_height="97dp"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/placeholder"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+</LinearLayout>

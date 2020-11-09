@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPurpleBrown"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.marte5.beautifulvino.RegistrazioneLogin.LoginActivity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/registrazione_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/registrazione_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/email_registrazione_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingBottom="@dimen/activity_login_bottom_margin"
+            android:paddingLeft="@dimen/activity_login_horizontal_margin"
+            android:paddingRight="@dimen/activity_login_horizontal_margin"
+            android:paddingTop="@dimen/activity_login_top_margin">
+
+            <TextView
+                android:id="@+id/textViewTitleRegistrati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60dp"
+                android:text="Registrati"
+                android:textAppearance="@style/TitleLoginFont" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:theme="@style/editTextWhite">
+
+                <EditText
+                    android:id="@+id/nomeRegistrazione"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_nome_registrazione"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="@style/editTextFontWhite" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:theme="@style/editTextWhite">
+
+                <EditText
+                    android:id="@+id/emailRegistrazione"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email_login"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="@style/editTextFontWhite" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/editTextWhite"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/passwordRegistrazione"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password_login"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionNone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="@style/editTextFontWhite" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="56dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/inter_ui_regular"
+                android:text="cliccando su "
+                android:textAppearance="@style/ButtonAccediFont"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/buttonRegistrati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/button_accedi_bg"
+                    android:text="@string/button_registrati"
+                    android:textAppearance="@style/ButtonAccediFont"
+                    android:textColor="@drawable/button_accedi_text" />
+
+                <ImageView
+                    android:id="@+id/image_freccia_registrati"
+                    android:elevation="20dp"
+                    android:layout_width="14dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="83dp"
+                    android:background="@drawable/freccia_yellow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="oppure"
+                android:textAppearance="@style/TextLongFont"
+                android:textColor="@android:color/white" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/button_registrati_fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linerLayoutLogin"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/layer_white_corner_button"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/button_registrati_fb"
+                android:textAppearance="@style/ButtonAccediFont"
+
+                android:textColor="@color/colorBluish"
+                facebook:com_facebook_login_text="@string/button_registrati_fb"
+                facebook:com_facebook_logout_text="@string/button_registrati_fb" />
+
+            <Button
+                android:id="@+id/button_registrati_gl_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/layer_white_corner_button"
+                android:text="@string/button_registrati_gl"
+                android:textAppearance="@style/ButtonAccediFont"
+                android:textColor="@color/colorOrangishRed" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

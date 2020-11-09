@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "782477517077",
+    "firebase_url": "https://beautiful-vino.firebaseio.com",
+    "project_id": "beautiful-vino",
+    "storage_bucket": "beautiful-vino.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782477517077:android:e41d9bafd8b98b3d",
+        "android_client_info": {
+          "package_name": "com.marte5.beautifulvino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782477517077-09fob5ig9hprbdg12h4i70tvemdsf277.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marte5.beautifulvino",
+            "certificate_hash": "093f6d1371ffb421cef2551d418cda5211c194ab"
+          }
+        },{
+          "client_id": "782477517077-ui2r5tv92psk3tda0n6840avmp15rdc2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marte5.beautifulvino",
+            "certificate_hash": "86c137c1e92a6ccf15fc2b87746c297e2a2f648a"
+          }
+        },
+        {
+          "client_id": "782477517077-f5taehvkm0oagtgp0i6k6q6tovff37mm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "782477517077-auv71u447bnomeetl5l7hlgrb6nn574s.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "782477517077-jmvahrfvniknev2lme40png5hja5a4r3.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "782477517077-acjan25tj2fo3ipp7elafpf2pqdcr95t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "782477517077-rgucrjt76kkkh99r9oshc46m0vql8jf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPJD3eZ-G5Fw6op47js2tc5gSTWyrtKsM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782477517077-rnqosqsk1j9e950m5rjgre4j6uboprtl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.marte5.Beautifulvino"
+              }
+            },
+            {
+              "client_id": "782477517077-f5taehvkm0oagtgp0i6k6q6tovff37mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
